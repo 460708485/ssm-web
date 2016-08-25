@@ -37,7 +37,7 @@ public class GoodsController {
         model.addAttribute("goodslist", list);
         return "goodslist";
     }
-
+    
     @RequestMapping(value = "/{goodsId}/buy", method = RequestMethod.GET, produces = {"application/json;charset=UTF-8"})
     @ResponseBody
     public BaseResult<Object> buy(@CookieValue(value = "userPhone", required = false) Long userPhone,
