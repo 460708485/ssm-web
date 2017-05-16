@@ -3,23 +3,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>标题列表</title>
+<meta charset="UTF-8">
+<title>藏宝图首页</title>
 <%@include file="common/head.jsp"%>
+<title>标题列表</title>
 </head>
 <body>
-	<div class="container">
-		<div class="panel panel-default">
-			<div class="panel-heading text-center">
-				<h2>用户列表</h2>
-			</div>
-			<div class="panel-body">
-				<c:forEach var="title" items="${titleList}">
-					<tr>
-						<li>${title.content}</a></li>
-					</tr>
-				</c:forEach>
-			</div>
+	<!-- 代码部分begin -->
+<div class="wapper">
+	<div class="header-widht w735 clearFloat pt15 pb10">
+		<div style="margin:500 0 0 100" >
+			<ul class="clearFloat">
+				<ul >
+					<c:forEach var="title" items="${titlelist}">
+						<tr style="margin:500 0 0 100">
+							<td >${title.content}</td>
+						</tr>	
+					</c:forEach>
+				</ul>
+			</ul>
+		</div>
+		
+		<div
+			<c:forEach var="content" items="${contentList}">
+						<tr style="margin:500 0 0 100">
+							<td >${content.title}</td>
+							<td>${content.content}</td>
+						</tr>	
+			</c:forEach>>
+
+		</div>
 		</div>
 	</div>
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/lanren.js"></script>
+<!-- 代码部分end -->
 </body>
 </html>

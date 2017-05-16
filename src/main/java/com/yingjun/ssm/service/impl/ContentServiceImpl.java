@@ -22,7 +22,7 @@ public class ContentServiceImpl implements ContentService {
 	
 	
 	@Override
-	public List<Content> getContentList(int type,int offset, int limit) {
+	public List<Content> getContentList(Integer type,int offset, int limit) {
 		String cache_key=RedisCache.CAHCENAME+"|getContentList|"+offset+"|"+limit;
 		//先去缓存中取
 		List<Content> result_cache=cache.getListCache(cache_key, Content.class);

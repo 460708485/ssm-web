@@ -7,7 +7,11 @@
 	<select id="queryAll" resultType="Content">
 		SELECT *
 		FROM content
-		where type = #{type}
+		<where>
+			<if test="type!=null">
+				type = #{type}		
+			</if>
+		</where>
 		ORDER BY sort_no 
 		limit #{offset},#{limit}
 	</select>

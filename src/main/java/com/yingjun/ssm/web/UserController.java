@@ -19,7 +19,7 @@ public class UserController {
 	private final Logger LOG = LoggerFactory.getLogger(this.getClass());
 	
 	@Autowired
-	private UserService userService;
+	private UserService userService;	
 
 	@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public String list(Model model, Integer offset, Integer limit) {

@@ -16,7 +16,7 @@ public interface ContentDao {
      * @param limit
      * @return
      */
-    List<Content> queryAll(@Param("type") int type,@Param("offset") int offset, @Param("limit") int limit);
+    List<Content> queryAll(@Param("type") Integer type,@Param("offset") int offset, @Param("limit") int limit);
 
 	
 }
