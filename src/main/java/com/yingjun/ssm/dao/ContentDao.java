@@ -17,6 +17,11 @@ public interface ContentDao {
      * @return
      */
     List<Content> queryAll(@Param("type") Integer type,@Param("offset") int offset, @Param("limit") int limit);
-
-	
+    
+    /**
+     * 获取详情
+     * @param id
+     * @return
+     */
+    Content queryById(@Param("id") Integer id);
 }

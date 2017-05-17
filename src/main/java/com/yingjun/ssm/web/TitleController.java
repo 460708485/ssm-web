@@ -38,7 +38,7 @@ public class TitleController {
 		List<Content> contentLists=contentService.getContentList(null, offset, limit);
 		model.addAttribute("titlelist", list);
 		model.addAttribute("contentList", contentLists);
-		return "title";
+		return "userlist";
 	}
 
 }

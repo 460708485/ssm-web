@@ -1,20 +1,25 @@
 package com.yingjun.ssm.entity;
 
+import java.io.Serializable;
+
 /**
  * 内容
- * @author  
+ * 
+ * @author
  *
  */
-public class Content {
-	
+public class Content implements Serializable {
+
+	private static final long serialVersionUID = 12212154121L;
+
 	private Integer id;
-	
+
 	private String content;
-	
-	private Integer  sortNo;
-	
-	private Integer type;//0普通，1.热门
-	
+
+	private Integer sortNo;
+
+	private Integer type;// 0普通，1.热门
+
 	private String title;
 
 	public Integer getId() {
@@ -56,7 +61,5 @@ public class Content {
 	public void setTitle(String title) {
 		this.title = title;
 	}
-	
-	
 
 }

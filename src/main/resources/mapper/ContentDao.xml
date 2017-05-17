@@ -16,6 +16,10 @@
 		limit #{offset},#{limit}
 	</select>
 
-
+	<select id="queryById" resultType="Content">
+		SELECT *
+		FROM content
+		where id = #{id}
+	</select>
  
 </mapper>

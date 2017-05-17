@@ -36,6 +36,16 @@ public class ContentServiceImpl implements ContentService {
 		}
 		return result_cache;
 	}
+
+
+	@Override
+	public Content queryById(Integer id) {
+		if(null == id ){
+			LOG.info("参数不能空");
+			return null;
+		}
+		return ContentDao.queryById(id);
+	}
 	
 	
 

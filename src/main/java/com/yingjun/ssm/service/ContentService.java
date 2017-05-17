@@ -8,4 +8,7 @@ public interface ContentService {
 
 	List<Content> getContentList(Integer type,int offset, int limit);
 	 
+	
+	Content queryById(Integer id);
+	
 }
