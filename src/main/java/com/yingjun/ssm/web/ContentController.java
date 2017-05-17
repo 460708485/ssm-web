@@ -41,11 +41,13 @@ public class ContentController {
 	 * @param id
 	 * @return
 	 */
-	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
-	public String queryById(Model model, @RequestParam Integer id) {
+	@RequestMapping(value = "/id", method = RequestMethod.GET)
+	public String queryById( Integer id) {
 		LOG.info("invoke----------/user/list");
+		//每当访问一次详情，缓存次数+1。
+		contentService.addCount(id);
 		Content content = contentService.queryById(id);
-		model.addAttribute("content", content);
+//		model.addAttribute("content", content);
 		return "detail";
 	}
 

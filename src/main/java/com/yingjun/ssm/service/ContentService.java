@@ -10,5 +10,7 @@ public interface ContentService {
 	 
 	
 	Content queryById(Integer id);
+
 	
+	void addCount(Integer id);
 }

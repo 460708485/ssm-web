@@ -70,7 +70,6 @@ footer {
 								href="http://www.68jn.cn/category-0.html"
 								title="查看 藏宝网项目简介 的全部文章">藏宝网项目简介</a> | 评论 : 0人 | 浏览 : <span
 								id="spn12"></span>
-							
 							次
 							<div class="clear"></div>
 						</h6>
@@ -89,6 +88,5 @@ footer {
 	</section>
 
 	<footer> Copyright W3Schools.com </footer>
-<script src="../jsp/js/content.js"></script>
 </body>
 </html>

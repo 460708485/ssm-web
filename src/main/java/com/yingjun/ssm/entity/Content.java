@@ -21,6 +21,8 @@ public class Content implements Serializable {
 	private Integer type;// 0普通，1.热门
 
 	private String title;
+	
+	private Integer count;//点击次数
 
 	public Integer getId() {
 		return id;
@@ -62,4 +64,13 @@ public class Content implements Serializable {
 		this.title = title;
 	}
 
+	public Integer getCount() {
+		return count;
+	}
+
+	public void setCount(Integer count) {
+		this.count = count;
+	}
+
+	
 }
