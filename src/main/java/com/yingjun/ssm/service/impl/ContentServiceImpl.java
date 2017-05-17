@@ -1,16 +1,17 @@
 package com.yingjun.ssm.service.impl;
 
-import com.yingjun.ssm.cache.RedisCache;
-import com.yingjun.ssm.common.constants.RedisConstant;
-import com.yingjun.ssm.dao.ContentDao;
-import com.yingjun.ssm.entity.Content;
-import com.yingjun.ssm.service.ContentService;
+import java.util.List;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
+import com.yingjun.ssm.cache.RedisCache;
+import com.yingjun.ssm.common.constants.RedisConstant;
+import com.yingjun.ssm.dao.ContentDao;
+import com.yingjun.ssm.entity.Content;
+import com.yingjun.ssm.service.ContentService;
 
 @Service
 public class ContentServiceImpl implements ContentService {
